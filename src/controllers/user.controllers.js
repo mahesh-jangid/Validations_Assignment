@@ -65,7 +65,3 @@ router.post(
 );
 
 module.exports = router;
-
-// ./
-// ../models/
-// ../../friendsBuilding/friendhouse
