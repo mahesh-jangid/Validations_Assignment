@@ -45,7 +45,12 @@ router.post(
       }
       return true;
     }),
-  body("gender").trim().not().isEmpty().withMessage("Gender cannot be empty"),
+  body("gender")
+    .trim()
+    .not()
+    .isEmpty()
+    .withMessage("Gender cannot be empty")
+    .bail(),
   async (req, res) => {
     try {
       console.log(body("pincode"));
